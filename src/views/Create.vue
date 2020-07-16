@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="8" offset="2">
         <!-- Create tast form -->
-        <v-form v-model="valid" validation @submit.prevent="onSubmit">
+        <v-form  ref="form" v-model="valid" validation @submit.prevent="onSubmit">
           <h1>Create task</h1>
 
           <!-- Task input field -->
@@ -102,7 +102,8 @@ export default {
         tags: this.tags ,
         deadline: this.date
       }
-      console.log(task)
+      this.$store.dispatch('createTask', task)
+      this.$router.push('/list')
     },
    
   }
