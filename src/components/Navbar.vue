@@ -13,7 +13,8 @@
       <v-spacer></v-spacer>
 
       <v-btn text height="100%" exact
-      :to="'/'"
+      :to="'/'" 
+      class="mr-2"
       >Create
       </v-btn>
 

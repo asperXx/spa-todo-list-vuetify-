@@ -39,7 +39,7 @@ export default {
           value: 'title',
           sortable: false
         },
-        {text: 'Date', value: 'deadline'},
+        {text: 'Deadline', value: 'deadline'},
         {text: 'Status', value: 'status'},
         {text: 'Open', value: 'open'},
         { text: '', value: 'data-table-expand' },
